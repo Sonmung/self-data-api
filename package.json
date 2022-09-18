@@ -19,5 +19,10 @@
   "homepage": "https://github.com/Sonmung/self-data-api#readme",
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1"
   }
 }
