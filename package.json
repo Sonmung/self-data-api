@@ -1,0 +1,23 @@
+{
+  "name": "self-data-api",
+  "version": "1.0.0",
+  "description": "REST API of my resume",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sonmung/self-data-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sonmung/self-data-api/issues"
+  },
+  "homepage": "https://github.com/Sonmung/self-data-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
