@@ -2,9 +2,10 @@
   "name": "self-data-api",
   "version": "1.0.0",
   "description": "REST API of my resume",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,11 @@
     "url": "https://github.com/Sonmung/self-data-api/issues"
   },
   "homepage": "https://github.com/Sonmung/self-data-api#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  },
   "dependencies": {
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
-    "mongoose": "^6.6.1"
+    "mongoose": "^6.6.1",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.0.2"
   }
 }

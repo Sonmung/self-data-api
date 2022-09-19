@@ -7,8 +7,14 @@ const project = require('../model/project')
 const tech = require('../model/tech')
 
 router.get('/', async(req,res) => {
-    const data = await basicInfo.find();
-    res.send(data);
+    try {
+        const data = await basicInfo.find();
+        res.send(data);
+    } catch (err) {
+        res.send(err.message)
+    }
+    
+    
 })
 
 router.get('/education', async(req,res) => {
